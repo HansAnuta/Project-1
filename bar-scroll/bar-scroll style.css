@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 200vh; /* Allows enough scroll space */
+    background-color: #1E1E1E;
+    color: white;
+    text-align: center;
+}
+
+/* Main Section */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    transition: all 0.3s ease-out;
+}
+
+/* Text Animation */
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 3rem;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: all 0.3s ease-out;
+}
+
+.bar {
+    width: 10px;
+    height: 60px;
+    background-color: pink;
+    transition: all 0.3s ease-out;
+}
+
+/* Content Section */
+.body-container {
+    background-color: #252525;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    font-size: 1.2rem;
+    transition: all 0.3s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text-container {
+        font-size: 2rem;
+        gap: 20px;
+    }
+
+    .bar {
+        height: 40px;
+    }
+
+    .body-container {
+        width: 90%;
+        font-size: 1rem;
+    }
+}
